@@ -19,7 +19,7 @@ class TaskItem extends Component {
         return(
             <div className="list-group-item">
                 <p>Product: <strong>{this.props.value.title}</strong></p>
-                <p>Price (Rs.): <strong>{this.props.value.price}</strong></p>
+                <p>Price ($-USD): <strong>{this.props.value.price}</strong></p>
                 <p>Remaining Inventory: <strong>{this.props.value.inventory}</strong></p>
                 <Button bsStyle="success" disabled={this.props.value.inventory === 0} onClick={this.handleClick}> Add to Cart</Button>
                 <span className="text-danger"><strong> {this.props.value.inventory === 0 ? 'No more Items left in Inventory' : ''}</strong></span>

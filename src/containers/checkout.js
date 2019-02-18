@@ -27,15 +27,15 @@ class Checkout extends Component {
                     {formattedArr.map((item,i) => 
                         <div key={i} className="list-group-item">
                             <p>Product: <strong>{item.title}</strong></p>
-                            <p>Price (Rs.): <strong>{item.price}</strong></p>
+                            <p>Price ($-USD): <strong>{item.price}</strong></p>
                             <p>Quantity Selected: <strong>{item.inventory}</strong></p>
                             <p>Total - Price x Quantity: <span className="text-primary"><strong>{item.price * item.inventory}</strong></span></p>
                         </div>
                     )}
                 </div>
                 <div>
-                    <h5><strong>Grand Total (Rs.): <span className="text-primary">{_grandTotal}</span></strong></h5>
-                    <Button bsStyle="success" className="pull-right">Proceed to Payment</Button>
+                    <h5><strong>Grand Total ($-USD): <span className="text-primary">{_grandTotal}</span></strong></h5>
+                    <Button bsStyle="success" className="pull-right" disabled>Proceed to Payment</Button>
                 </div>
                 <br /><br /><br /><br /><br />
             </div>

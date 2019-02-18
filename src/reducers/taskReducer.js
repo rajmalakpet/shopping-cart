@@ -1,9 +1,9 @@
 
 export let initialData = {
     productInventory: [
-        {id: 1, "title": "TV", "price": 11500.01, "inventory": 5},
-        {id: 2, "title": "Fridge", "price": 11110.99, "inventory": 20},
-        {id: 3, "title": "Mobile", "price": 1119.99, "inventory": 5}
+        {id: 1, "title": "TV", "price": 599, "inventory": 5},
+        {id: 2, "title": "Laptop", "price": 1599, "inventory": 20},
+        {id: 3, "title": "Mobile", "price": 899, "inventory": 5}
     ],
     cartList: []
 }

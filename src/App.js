@@ -15,9 +15,9 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-          <div className="row">
-            <h3><strong>Welcome to Shopping Cart Application</strong></h3>
-            <h5>By: Raj Malakpet</h5>
+          <div className="row alert alert-success text-center">
+            <h3>Shopping Cart Demo</h3>
+            <h4>(ReactJS + Redux)</h4>
           </div>
           <hr />
           <div className="row">
