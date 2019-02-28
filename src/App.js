@@ -15,16 +15,9 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-          <div className="row alert alert-success text-center">
-            <h3>Shopping Cart Demo</h3>
-            <h4>(ReactJS + Redux)</h4>
-          </div>
-          <hr />
-          <div className="row">
-            <Link to="/shopping" className="btn btn-primary pull-left">Let's shop...</Link>
-            <Link to="/cart" className="btn btn-danger pull-right">
-              <Cart />
-            </Link>
+          <div className="well" style={{backgroundColor:'#ac1a17'}}>
+            <span style={{fontWeight:'bold', color:'#fff', paddingLeft: '10px'}}>Shopping Cart Demo (ReactJS + Redux)</span>
+            <Link to="/cart" style={{marginTop:'-5px'}} className="btn btn-danger customBtn pull-right"><Cart /></Link>
           </div>
           <br />
           <Switch>

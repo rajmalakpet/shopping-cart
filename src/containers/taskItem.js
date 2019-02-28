@@ -18,11 +18,18 @@ class TaskItem extends Component {
     render(){
         return(
             <div className="list-group-item">
-                <p>Product: <strong>{this.props.value.title}</strong></p>
-                <p>Price ($-USD): <strong>{this.props.value.price}</strong></p>
-                <p>Remaining Inventory: <strong>{this.props.value.inventory}</strong></p>
-                <Button bsStyle="success" disabled={this.props.value.inventory === 0} onClick={this.handleClick}> Add to Cart</Button>
-                <span className="text-danger"><strong> {this.props.value.inventory === 0 ? 'No more Items left in Inventory' : ''}</strong></span>
+               <div className="row">
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <p>Product: <strong>{this.props.value.title}</strong></p>
+                        <p>Price ($-USD): <strong>{this.props.value.price}</strong></p>
+                        <p>Remaining Inventory: <strong>{this.props.value.inventory}</strong></p>
+                        <Button className="customBtn" bsStyle="success" disabled={this.props.value.inventory === 0} onClick={this.handleClick}> Add to Cart</Button>
+                        <span className="text-danger"><strong> {this.props.value.inventory === 0 ? 'No more Items left in Inventory' : ''}</strong></span>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <img src={this.props.value.imgURL} style={{height:'250px'}} alt="opps.."/>
+                    </div>
+               </div>
             </div>
         )
     }

@@ -13,7 +13,6 @@ class TaskList extends Component {
 
         return(
             <div className="row">
-                <br />
                 <div className="list-group">
                     {this.props.completeOBJ.productInventory.map((item,i) => 
                         <TaskItem key={i} value={item} />
